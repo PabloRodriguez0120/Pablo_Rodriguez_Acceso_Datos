@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1 " fx:controller="controller.profesorController">
+   <children>
+      <Text fill="#ff7300" layoutX="174.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GESTIÓN NOTAS -&gt; PROFESOR" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField id="tf_nota" fx:id="tf_nota" layoutX="147.0" layoutY="253.0" />
+      <ChoiceBox id="select_asignatura" fx:id="select_asignatura" layoutX="158.0" layoutY="92.0" prefWidth="150.0" />
+      <ChoiceBox id="select_alumno" fx:id="select_alumno" layoutX="158.0" layoutY="169.0" prefWidth="150.0" />
+      <Label layoutX="43.0" layoutY="93.0" text="ASIGNATURA">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="170.0" text="ALUMNO">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="254.0" text="NOTA">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button id="btn_guardar" layoutX="166.0" layoutY="315.0" mnemonicParsing="false" onAction="#clickGuardarNota" text="GUARDAR" />
+      <Button fx:id="btn_salir" layoutX="282.0" layoutY="315.0" mnemonicParsing="false" onAction="#cliclkSalir" text="SALIR" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="362.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/cropped-image-smiling-positive-woman-being-busy-using-white-laptop-surfing-net-working-online-being-freelancer.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
